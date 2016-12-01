@@ -2,12 +2,12 @@ $(function(){
     var clientH=$(window).height();
     var num=0;
     var flag=true;
-    // $("#fullpage").mousedown(function (e) {
-    //     e.preventDefault();
-    // })
-    // $("#fullpage").mousemove(function (e) {
-    //     e.preventDefault();
-    // })
+    $("#fullpage").mousedown(function (e) {
+        e.preventDefault();
+    })
+    $("#fullpage").mousemove(function (e) {
+        e.preventDefault();
+    })
     touch.on("body","swipeup","#fullpage",function(){
         if(!flag){
             return;
@@ -43,17 +43,11 @@ $(function(){
     })
     $("#fullpage")[0].addEventListener("webkitTransitionEnd",function(){
         flag=true;
-        // if(num!=0){
-        //     $(".aa").find("")
-        //     $(".aa").eq(num).find(".left-img").css({
-        //
-        //     })
-        // }
     });
 
 
     //菜单
-    flag1=true;
+    var flag1=true;
     $(".menu").click(function () {
         if(flag1){
             $(this).find(".menu-tline").css({
@@ -91,11 +85,15 @@ $(function(){
         var clientW=$(window).width();
         $("#fullpage").css("marginTop",clientH*-num);
         if(clientW>1000){
-            $(".menu a").css({
+            $(".header-min a").css({
                 animation:"none",
                 opacity:0,
                 transform:"rotate(90deg)"
             })
+            $(".menu-tline,.menu-bline").css({
+                transform:"none"
+            })
+            flag1=true;
         }
 
     })

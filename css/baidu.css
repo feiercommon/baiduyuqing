@@ -231,17 +231,105 @@ section:nth-child(4){
 .form-action{
     padding:0 20px;
 }
+.form-action .submit{
+    border: 0;
+    background: #ffd850;
+    color: #5c4c12;
+    border-radius: 2px;
+    width: 299px;
+    margin-top:32px;
+    display: block;
+    font-size: 18px;
+    line-height: 35px;
+    text-align: center;
+}
+.other{
+    margin: 12px 0 8px;
+    font-size: 12px;
+    color: #9dbcdb;
+}
+.other .fl{
+    float:left;
+}
+.fl span{
+    display: inline-block;
+    width: 15px;
+    height: 17px;
+    background: url(../img/jlin.png) no-repeat -203px -75px;
+    margin: 4px 4px 0 0;
+    float:left;
+}
+.fl a{
+    cursor:pointer;
+    font-size:12px;
+    color:#fff;
+    float:left;
+    margin-top:5px;
+}
+.fr a{
+    color:#fff;
+}
+.other .fr{
+    float:right;
+    margin-top:5px;
+}
 .acount{
     width: 299px;
     border: 0;
     height: 40px;
     background: #fff;
 }
+.acount span{
+    width:14px;height:14px;
+    background:url(../img/jlin.png) no-repeat -124px -13px;
+    margin:12px 3px 0 10px;
+    display:block;
+    float:left;
+}
+.acount input{
+    padding:9px;
+    border:0;
+    height:12px;
+    font-size:14px;
+    margin-top:5px;
+}
 .password{
     width: 299px;
     border: 0;
     height: 40px;
     background: #fff;
+}
+.password span{
+    width:14px;height:14px;
+    background:url(../img/jlin.png) no-repeat -140px -14px;
+    margin:12px 3px 0 10px;
+    display:block;
+    float:left;
+}
+.password input{
+    padding:9px;
+    border:0;
+    height:12px;
+    font-size:14px;
+    margin-top:5px;
+}
+.check input{
+    padding:9px;
+    border:0;
+    height:22px;
+    font-size:14px;
+    width:122px;
+    float:left;
+}
+.check img{
+    float:left;
+    margin-left:20px;
+}
+.check a{
+    color:#fff;
+    font-size:12px;
+    line-height:40px;
+    padding-left:20px;
 }
 .bottom1{
     position: absolute;
@@ -588,9 +676,11 @@ section:nth-child(4){
 }
 .menu .menu-tline{
     width:100%;height:2px;position:absolute;left:0;top:10px;background:#fff;
+    transition: transform 1s ease;
 }
 .menu .menu-bline{
     width:100%;height:2px;position:absolute;left:0;top:20px;background:#fff;
+    transition: transform 1s ease;
 }
 .sceen{
     width:100%;height:40px;position:absolute;
